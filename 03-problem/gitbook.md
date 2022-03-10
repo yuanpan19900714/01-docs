@@ -1,4 +1,4 @@
-## win10系统gitbook init报错
+## gitbook init报错
 
 - 前提：win10系统，安装了nodejs
 - 问题：打开cmd窗口，使用`npm install -g gitbook-cli`命令安装gitbook插件，在指定目录执行`gitbook init`命令会提示以下错误

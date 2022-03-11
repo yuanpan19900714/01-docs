@@ -1,6 +1,6 @@
 ## windows系统gitbook安装
-
-- 前提：[安装nodejs]()
+- 说明：这里所说gitbook是指基于nodejs的gitbook客户端
+- 前提：[安装nodejs](./nodejs.md)
 - 验证前提：win+R快捷键输入cmd打开DOS窗口，输入以下命令验证
   - 验证nodejs
   ```

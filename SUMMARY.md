@@ -15,4 +15,5 @@
 ## [gitbook](./03-problem/gitbook.md)
 ## [nodejs](./03-problem/nodejs.md)
 ## [nvm](./03-problem/nvm.md)
+## [vamware](./03-problem/vamware.md)
 ---

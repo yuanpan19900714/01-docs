@@ -1,4 +1,5 @@
 # linux系统安装libgphoto2遇到的问题
+## 缺少libldtl
 我们在[gphoto官网](http://gphoto.org/)可以下载到`libgthoto`的源码，得到一个`libgphoto2-2.5.29.tar.bz2`包，解压发现里面没有`Makefile`文件，只有`makefile.am`和`makefile.in`文件，这需要我们执行`configure`来生成`Makefile`文件，执行后报缺少`libltdl`的错误，于是我们使用yum安装
 ```
 yum -y install libltdl

@@ -2,7 +2,7 @@
 假设有一表tb，字段名为name，类型为oldType，修改后类型为newType
 ## 对应字段无数据
 直接修改
-```
+```sql
 alter table tb modify column(name newType);
 ```
 ## 对应字段有数据，修改后类型兼容旧类型

@@ -17,3 +17,10 @@
 ## [nvm](./03-problem/nvm.md)
 ## [vamware](./03-problem/vamware.md)
 ---
+# 我的笔记
+## 数据库
+### [neo4j](./04-note/db/neo4j.md)
+### [oracle](./04-note/db/oracle.md)
+## JAVA
+## LINUX
+### [系统参数](./04-note/linux/sysParam.md)

@@ -35,3 +35,27 @@ alter table tb drop column name_tmp;
 3. 修改字段类型
 4. 将数据复制回来
 5. 删除tmp字段
+   
+# 数据统计：按日、周、月、季度、年
+这里所说统计是指数据表table中date字段和当前系统时间sysdate的时间差
+## 每日
+## 每周
+## 每月
+```sql
+select sysdate,t.date,ceil(months_between(sysdate,t.date)) dif 
+from table t
+where add_months(t.date,ceil(months_between(sysdate,t.date)))<=sysdate;
+```
+## 每季度
+```sql
+select sysdate,t.date,ceil(months_between(sysdate,t.date)) dif 
+from table t
+where add_months(t.date,ceil(months_between(sysdate,t.date)/3)*3)<=sysdate;
+```
+## 每年
+```sql
+select sysdate,t.date,ceil(months_between(sysdate,t.date)) dif 
+from table t
+where add_months(t.date,ceil(months_between(sysdate,t.date)/12)*12)<=sysdate;
+```
+# 数据导出导入与数据泵导出导入

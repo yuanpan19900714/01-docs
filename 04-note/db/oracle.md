@@ -59,3 +59,21 @@ from table t
 where add_months(t.date,ceil(months_between(sysdate,t.date)/12)*12)<=sysdate;
 ```
 # 数据导出导入与数据泵导出导入
+## 前提条件
+使用expdb命令导出和使用impdb命令导入时，转储文件只能存放在DIRECTORY对象对应的系统目录，必须先创建DIRECTORY对象，并为数据库用户赋予权限
+1. 查询DIRECTORY对象：
+```sql
+select * from dba_directories;
+```
+2. 新建DIRECTORY对象：
+```sql
+CREATE OR REPLACE DIRECTORY dir_exp AS '/home/oracle/dump/exp';
+```
+3. 赋权：
+```sql
+GRANT read,write ON DIRECTORY dir_exp TO test;
+```
+## 导出
+1. 
+## 导入
+## 区别

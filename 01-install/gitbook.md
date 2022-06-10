@@ -1,19 +1,27 @@
+# gitbook安装
+
 ## windows系统gitbook安装
+
 - 说明：这里所说gitbook是指基于nodejs的gitbook客户端
 - 前提：[安装nodejs](./nodejs.md)
 - 验证前提：win+R快捷键输入cmd打开DOS窗口，输入以下命令验证
   - 验证nodejs
-  ```
+
+  ```dos
   C:\Users\Administrator>node --version
   v12.19.0
   ```
+
   - 验证npm
-  ```
+
+  ```dos
   C:\Users\Administrator>npm --version
   6.14.8
   ```
+
 - 安装gitbook
-```
+
+```dos
 C:\Users\Administrator>npm install -g gitbook
 
 gitbook@2.6.9 
@@ -55,4 +63,5 @@ AppData\Local\Temp\tmp-16763iLw34wjVBqN\node_modules\gitbook
 ├── juice@1.5.0 (commander@2.3.0, slick@1.12.1, batch@0.5.2, cssom@0.3.0, web-resource-inliner@1.1.4)
 └── npm@2.4.1
 ```
+
 - 使用：见[gitbook使用](../02-usage/gitbook.md)

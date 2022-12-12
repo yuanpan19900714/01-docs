@@ -123,3 +123,21 @@ GRANT read,write ON DIRECTORY dir_exp TO test;
 ### 导入
 
 ### 区别
+
+## 查询条件带特殊字符
+查询条件中需要带特殊字符时，使用ASCII码与字符串拼接符“||”
+### 语法
+以单引号为例，其ASCII码为chr(39)
+```sql
+select * from table where col like '%'||char(39)||'%';
+```
+### 其他特殊字符的ASCII码
+非完全列出
+```
+tab空格  ------ chr(9)
+换行     ------ chr(10)
+回车     ------ chr(13)
+回车换行 ------ chr(13)&chr(10)
+空格     ------ chr(32)
+双引号   ------ chr(34)
+```
